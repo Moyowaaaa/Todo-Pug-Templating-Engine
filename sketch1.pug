@@ -1,0 +1,36 @@
+extends layout 
+
+block content
+  h1 #{title}
+  form(method='POST', action='/')
+    #form-group
+      label name: 
+      textarea.form-control(name='name', type='text')
+    input.btn.btn.primary(type='submit', value='Submit')
+
+  ul
+    each todo, i in todos
+      li= todo.name 
+
+
+
+      //
+      extends layout 
+
+block content
+  h1 #{title}
+  br
+  form(method='POST', action='/')
+    #form-group
+      textarea.form-control(placeholder ='Add something.....', type='text' name='name' style='rows:1')
+    br
+    input.btn.btn.primary(type='submit', value='Submit')
+    br
+    br
+    br
+  ul.list-group
+    each todo, i in todos
+      li.list-group-item= todo.name 
+      .btn.btn-default(href='/'+todo._id) Edit 
+      br 
+      br

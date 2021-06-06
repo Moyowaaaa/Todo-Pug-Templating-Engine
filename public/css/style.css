@@ -1,0 +1,32 @@
+body{
+    background-color:whitesmoke ;
+}
+h1{
+    text-align:center;
+    font-size:40px;
+}
+.fa{
+    background:red;
+    font-size:17px;
+    color:white;
+}
+button .fa{
+    background:teal;
+    font-size:35px;
+    height:10px;
+    border-radius:25px;
+}
+button{
+    float:right;
+    background-color: teal;
+    border-color:transparent;
+    border-radius:50%;
+    height:45px;
+}
+button .fa:hover{
+    color:black;
+    background-color:darkslategrey
+}
+button:hover{
+    background-color:darkslategrey
+}
