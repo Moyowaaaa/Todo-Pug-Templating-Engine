@@ -68,7 +68,7 @@ app.get('/',function(req, res){
      });
  });
 
- //sdelet
+ //delete
  app.delete('/:id', function(req,res){
      let query = {_id:req.params.id}
      Todo.remove(query, function(err){

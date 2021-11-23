@@ -3,7 +3,7 @@ extends layout
 block content
   h1 #{title}
   br
-  form(method='POST', action='/')
+  form(method='POST', action='/') 
     #form-group
       textarea.form-control(placeholder ='Add something.....', type='text' name='name' style='rows:1')
     br
@@ -16,7 +16,6 @@ block content
   ul.list-group
     each todo, i in todos 
       li.list-group-item= todo.name 
-      br
       .btn.delete-todo(href='#', data-id=todo._id).i.fa.fa-times-circle
       br 
       br
